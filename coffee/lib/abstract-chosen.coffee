@@ -45,6 +45,7 @@ class AbstractChosen
       @default_text = @options.placeholder_text_single || @options.placeholder_text || "Select an Option"
 
     @results_none_found = @form_field.getAttribute("data-no_results_text") || @options.no_results_text || "No results match"
+    @stay_open = @options.stay_open or false 
 
   mouse_enter: -> @mouse_on_container = true
   mouse_leave: -> @mouse_on_container = false
